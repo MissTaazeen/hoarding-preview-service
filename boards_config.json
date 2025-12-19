@@ -1,0 +1,16 @@
+{
+  "RABALE_8x4": {
+    "file": "boards/Bamandongri_Outside_Station_LHS_Fcg_Station_1_20x20.png",
+    "x": 120,
+    "y": 80,
+    "w": 600,
+    "h": 300
+  },
+  "VASHI_30x15": {
+    "file": "boards/Bamandongri_Outside_Station_LSH_Fcg_Parking_1_20x20.png",
+    "x": 200,
+    "y": 100,
+    "w": 800,
+    "h": 400
+  }
+}
