@@ -10,11 +10,7 @@ with open(CONFIG_PATH, "r", encoding="utf-8") as f:
 
 
 def place_creative_on_board(board_name: str, creative_path: str, output_path: str) -> str:
-    """
-    board_name: key from boards_config.json (e.g. 'RABALE_8x4')
-    creative_path: path to user's image (e.g. 'image.jpg')
-    output_path: where to save the final preview (e.g. 'preview.png')
-    """
+    
     if board_name not in BOARDS_CFG:
         raise ValueError(f"No config for board '{board_name}'")
 
@@ -41,11 +37,6 @@ def generate_preview_for_image(
     top_k: int = 1,
     output_path: str = "preview.png",
 ) -> dict:
-    """
-    1) Pick the best-fitting board by aspect ratio.
-    2) Overlay creative on that board using boards_config.json.
-    3) Return info about the chosen board and the preview path.
-    """
     matches = suggest_boards_for_image(creative_path, max_diff=max_diff, top_k=top_k)
     if not matches:
         raise ValueError("No boards configured")
