@@ -1,16 +1,234 @@
 {
-  "RABALE_8x4": {
-    "file": "boards/Bamandongri_Outside_Station_LHS_Fcg_Station_1_20x20.png",
-    "x": 120,
-    "y": 80,
-    "w": 600,
-    "h": 300
-  },
-  "VASHI_30x15": {
-    "file": "boards/Bamandongri_Outside_Station_LSH_Fcg_Parking_1_20x20.png",
-    "x": 200,
-    "y": 100,
-    "w": 800,
-    "h": 400
-  }
+  "Bamandongri_Outside_Station_LHS_Fcg_Station_1_20x20": {
+    "file": "boards/1/Bamandongri_Outside_Station_LHS_Fcg_Station_1_20x20.png",
+    "x": 480,"y": 356,"w": 138,"h": 86},
+  "Bamandongri_Outside_Station_LSH_Fcg_Parking_1_20x20": {
+    "file": "boards/1/Bamandongri_Outside_Station_LSH_Fcg_Parking_1_20x20.png",
+    "x": 478,"y": 354,"w": 178,"h": 73},
+  "Bamandongri_Railway_Station_Platfrom_boards_9x10": {
+    "file": "boards/1/Bamandongri_Railway_Station_Platfrom_boards_9x10.png",
+    "x": 479,"y": 355,"w": 163,"h": 42},
+  "Kharkopar_Railway_Station_Platfrom_boards_9x10": {
+    "file": "boards/1/Kharkopar_Railway_Station_Platfrom_boards_9x10.png",
+    "x": 480,"y": 354,"w": 183,"h": 39},
+
+  "DME_Expressway_Nr_Rest_Point_Haridwar_Facing_60x20": {
+    "file": "boards/2/DME_Expressway_Nr_Rest_Point_Haridwar_Facing_60x20.png",
+    "x": 496,"y": 321,"w": 87,"h": 122},
+  "Muradnagar_Canal_Bridge_30x15": {
+    "file": "boards/2/Muradnagar_Canal_Bridge_30x15.png",
+    "x": 494,"y": 316,"w": 197,"h": 68},
+  "Saharanpur_Delhi_Road_Chunati_Crossing_Delhi_Facing_20x10": {
+    "file": "boards/2/Saharanpur_Delhi_Road_Chunati_Crossing_Delhi_Facing_20x10.png",
+    "x": 496,"y": 320,"w": 190,"h": 80},
+  "Saharanpur_Delhi_Road_Chunati_Crossing_Saharanpur_Facing_20x10": {
+    "file": "boards/2/Saharanpur_Delhi_Road_Chunati_Crossing_Saharanpur_Facing_20x10.png",
+    "x": 495,"y": 319,"w": 243,"h": 91},
+  "Shamli_Break_Point_Kairna_Road_20x10": {
+    "file": "boards/2/Shamli_Break_Point_Kairna_Road_20x10.png",
+    "x": 496,"y": 323,"w": 217,"h": 51},
+  "Budhana_Bus_Stand_20x10": {
+    "file": "boards/2/Budhana_Bus_Stand_20x10.png",
+    "x": 499,"y": 322,"w": 215,"h": 82},
+  "Bhopal_Muzaffarnagar_Raod_Jat_Mujera_Village_20x10": {
+    "file": "boards/2/Bhopal_Muzaffarnagar_Raod_Jat_Mujera_Village_20x10.png",
+    "x": 494,"y": 320,"w": 117,"h": 64},
+  "Jansath_Panipat_Khatima_Highway_20x20": {
+    "file": "boards/2/Jansath_Panipat_Khatima_Highway_20x20.png",
+    "x": 497,"y": 320,"w": 393,"h": 54},
+  "Muzaffarnagar_Meenakshi_Chowk_30x10": {
+    "file": "boards/2/Muzaffarnagar_Meenakshi_Chowk_30x10.png",
+    "x": 497,"y": 321,"w": 204,"h": 96},
+  "Muzaffarnagar_Bhopal_Bus_Stand_20x10": {
+    "file": "boards/2/Muzaffarnagar_Bhopal_Bus_Stand_20x10.png",
+    "x": 495,"y": 319,"w": 174,"h": 67},
+
+  "RABALE_RAILWAY_STATION_SUBWAY_BOARDS_4x4": {
+    "file": "boards/3/RABALE_RAILWAY_STATION_SUBWAY_BOARDS_4x4.png",
+    "x": 471,"y": 348,"w": 184,"h": 81},
+  "RABALE_RAILWAY_STATION_PLATFORM_BOARD_8x4": {
+    "file": "boards/3/RABALE_RAILWAY_STATION_PLATFORM_BOARD_8x4.png",
+    "x": 471,"y": 349,"w": 166,"h": 72},
+  "RABALE_RAILWAY_STATION_SUBWAY_BOARDS_18x4": {
+    "file": "boards/3/RABALE_RAILWAY_STATION_SUBWAY_BOARDS_18x4.png",
+    "x": 471,"y": 347,"w": 89,"h": 43},
+  "RABALE_RAILWAY_STATION_TICKET_COUNTER_BOARDS_8x4": {
+    "file": "boards/3/RABALE_RAILWAY_STATION_TICKET_COUNTER_BOARDS_8x4.png",
+    "x": 470,"y": 347,"w": 110,"h": 65},
+
+  "GHANSOLI_RAILWAY_STATION_PLATFORM_BOARDS_8x4": {
+    "file": "boards/3/GHANSOLI_RAILWAY_STATION_PLATFORM_BOARDS_8x4.png",
+    "x": 472,"y": 349,"w": 164,"h": 65},
+  "GHANSOLI_RAILWAY_STATION__SUBWAY_BOARDS_4x4": {
+    "file": "boards/3/GHANSOLI_RAILWAY_STATION__SUBWAY_BOARDS_4x4.png",
+    "x": 469,"y": 348,"w": 198,"h": 60},
+  "GHANSOLI_RAILWAY_STATION__SUBWAY_BOARDS_18x4": {
+    "file": "boards/3/GHANSOLI_RAILWAY_STATION__SUBWAY_BOARDS_18x4.png",
+    "x": 467,"y": 349,"w": 86,"h": 57},
+  "GHANSOLI_RAILWAY_STATION_THANE_SIDE_SUBWAY_BOARD_18x4": {
+    "file": "boards/3/GHANSOLI_RAILWAY_STATION_THANE_SIDE_SUBWAY_BOARD_18x4.png",
+    "x": 471,"y": 349,"w": 104,"h": 46},
+  "GHANSOLI_RAILWAY_STATION_THANE_SIDE_SUBWAY_BOARDS_4x4": {
+    "file": "boards/3/GHANSOLI_RAILWAY_STATION_THANE_SIDE_SUBWAY_BOARDS_4x4.png",
+    "x": 469,"y": 346,"w": 204,"h": 92},
+  "GHANSOLI_RAILWAY_STATION_TICKET_COUNTER_BOARDS_8x4": {
+    "file": "boards/3/GHANSOLI_RAILWAY_STATION_TICKET_COUNTER_BOARDS_8x4.png",
+    "x": 470,"y": 348,"w": 239,"h": 84},
+  "GHANSOLI_RAILWAY_STATION_STARICASE_BOARD_8x4": {
+    "file": "boards/3/GHANSOLI_RAILWAY_STATION_STARICASE_BOARD_8x4.png",
+    "x": 471,"y": 348,"w": 153,"h": 67},
+
+  "TURBHE_RAILWAY_STATION_PLATFORM_BOARDS_8x4": {
+    "file": "boards/3/TURBHE_RAILWAY_STATION_PLATFORM_BOARDS_8x4.png",
+    "x": 470,"y": 347,"w": 149,"h": 70},
+  "TURBHE_RAILWAY_STATION_SUBWAY_BOARDS_4x4": {
+    "file": "boards/3/TURBHE_RAILWAY_STATION_SUBWAY_BOARDS_4x4.png",
+    "x": 469,"y": 347,"w": 183,"h": 96},
+  "TURBHE_RAILWAY_STATION_SUBWAY_BOARDS_18x4": {
+    "file": "boards/3/TURBHE_RAILWAY_STATION_SUBWAY_BOARDS_18x4.png",
+    "x": 468,"y": 346,"w": 96,"h": 84},
+  "TURBHE_RAILWAY_STATION_TICKET_COUNTER_BOARDS_18x4": {
+    "file": "boards/3/TURBHE_RAILWAY_STATION_TICKET_COUNTER_BOARDS_18x4.png",
+    "x": 470,"y": 349,"w": 112,"h": 55},
+
+  "BAMANDONGRI_RAILWAY_STATION_PLATFROM_BOARDS_9x10": {
+    "file": "boards/3/BAMANDONGRI_RAILWAY_STATION_PLATFROM_BOARDS_9x10.png",
+    "x": 471,"y": 346,"w": 164,"h": 42},
+  "BAMANDONGRI_RAILWAY_STATION_PLATFORM_BOARDS_8x4": {
+    "file": "boards/3/BAMANDONGRI_RAILWAY_STATION_PLATFORM_BOARDS_8x4.png",
+    "x": 471,"y": 348,"w": 164,"h": 74},
+  "BAMANDONGRI_RAILWAY_STATION_SUBWAY_BOARDS_4x4": {
+    "file": "boards/3/BAMANDONGRI_RAILWAY_STATION_SUBWAY_BOARDS_4x4.png",
+    "x": 471,"y": 347,"w": 172,"h": 58},
+  "BAMANDONGRI_RAILWAY_STATION_BOARDS_8x10": {
+    "file": "boards/3/BAMANDONGRI_RAILWAY_STATION_BOARDS_8x10.png",
+    "x": 467,"y": 347,"w": 123,"h": 58},
+  
+  "KHARKOPAR_RAILWAY_STATION_SUBWAY_BOARDS_4x4": {
+    "file": "boards/3/KHARKOPAR_RAILWAY_STATION_SUBWAY_BOARDS_4x4.png",
+    "x": 467,"y": 346,"w": 198,"h": 127},
+  "KHARKOPAR_RAILWAY_STATION_PLATFORM_BOARDS_9x10": {
+    "file": "boards/3/KHARKOPAR_RAILWAY_STATION_PLATFORM_BOARDS_9x10.png",
+    "x": 468,"y": 345,"w": 179,"h": 36},
+  "KHARKOPAR_RAILWAY_STATION_PLATFORM_BOARDS_8x4": {
+    "file": "boards/3/KHARKOPAR_RAILWAY_STATION_PLATFORM_BOARDS_8x4.png",
+    "x": 466,"y": 345,"w": 165,"h": 48},
+  
+  "TURBHE_RAILWAY_STATION_TICKET_COUNTER_BOARDS_8x4": {
+    "file": "boards/3/TURBHE_RAILWAY_STATION_TICKET_COUNTER_BOARDS_8x4.png",
+    "x": 467,"y": 344,"w": 190,"h": 64},
+
+  "VASHI_RLY_STATION_INORBIT_SIDE_FCG_STATION_TO_CITY_1ST_(UPPER)_AAA-VS-006_30X15": {
+    "file": "boards/3/VASHI_RLY_STATION_INORBIT_SIDE_FCG_STATION_TO_CITY_1ST_-UPPER-_AAA-VS-006_30X15.png",
+    "x": 470,"y": 348,"w": 192,"h": 68},
+  "VASHI_RLY_STATION_RAGHULEELA_MALL_FCG_CITY_TO_STATION_3RD_(UPPER)_AAA-VS-012_30x15": {
+    "file": "boards/3/VASHI_RLY_STATION_RAGHULEELA_MALL_FCG_CITY_TO_STATION_3RD_-UPPER-_AAA-VS-012_30x15.png",
+    "x": 465,"y": 346,"w": 167,"h": 76},
+  "VASHI_RLY_STATION_INORBIT_MALL_FCG_VASUNDHARA_HOTEL_(LOWER)_30x15": {
+    "file": "boards/3/VASHI_RLY_STATION_INORBIT_MALL_FCG_VASUNDHARA_HOTEL_-LOWER-_30x15.png",
+    "x": 467,"y": 346,"w": 201,"h": 125},
+  "NERUL_STATION_WEST_FCG_STATION_3RD_(LOWER)_AAA-NR-025_30x15": {
+    "file": "boards/3/NERUL_STATION_WEST_FCG_STATION_3RD_-LOWER-_AAA-NR-025_30x15.png",
+    "x": 469,"y": 347,"w": 333,"h": 109},
+  "NERUL_STATION_WEST_BIKE_PARKING_FCG_CITY_1ST_NEW_SITE_(UPPER)_AAA-NR-016_30x15": {
+    "file": "boards/3/NERUL_STATION_WEST_BIKE_PARKING_FCG_CITY_1ST_NEW_SITE_-UPPER-_AAA-NR-016_30x15.png",
+    "x": 465,"y": 345,"w": 329,"h": 45},
+
+  "KALWA_STN_2ND_PLATFORM_PILLAR_BOARD_(BACK_TO_BACK)_2x3": {
+    "file": "boards/3/KALWA_STN_2ND_PLATFORM_PILLAR_BOARD_-BACK_TO_BACK-_2x3.png",
+    "x": 469,"y": 348,"w": 201,"h": 104},
+  "FOB_KASARA_END_CONNECTING_MMRDA_FOB(BULK_AD_ONLY,_30_OR_60)_4x2": {
+    "file": "boards/3/FOB_KASARA_END_CONNECTING_MMRDA_FOB-BULK_AD_ONLY-_30_OR_60-_4x2.png",
+    "x": 470,"y": 348,"w": 300,"h": 26},
+  "KALYAN_PLATFORM_NO_1/1A/2/3/4/5/6/7_(BULK_AD_ONLY_20_40_60)_2x3": {
+    "file": "boards/3/KALYAN_PLATFORM_NO_11A234567_-BULK_AD_ONLY_20_40_60-_2x3.png",
+    "x": 468,"y": 345,"w": 135,"h": 171},
+  "THAKURLI_PLATFORM_2x3": {
+    "file": "boards/3/THAKURLI_PLATFORM_2x3.png",
+    "x": 466,"y": 345,"w": 201,"h": 79},
+  "KOPAR_RLY_STN_1ST_AND_2ND_PLATFORM_PILLAR_BOARD_(BACK_TO_BACK)(BULK_AD_ONLY)_2x3": {
+    "file": "boards/3/KOPAR_RLY_STN_1ST_AND_2ND_PLATFORM_PILLAR_BOARD_-BACK_TO_BACK-BULK_AD_ONLY-_2x3.png",
+    "x": 465,"y": 342,"w": 184,"h": 57},
+
+  "Dombivli_Gymkhana_T_Junction_Facing_GhardaCircle_20x18": {
+    "file": "boards/4/Dombivli_Gymkhana_T_Junction_Facing_GhardaCircle_20x18.png",
+    "x": 541,"y": 339,"w": 185,"h": 137},
+  "Kalyan_Patripul_Facing_Dombivli_35x35": {
+    "file": "boards/4/Kalyan_Patripul_Facing_Dombivli_35x35.png",
+    "x": 542,"y": 337,"w": 198,"h": 61},
+  "Kalyan_Bail_Bazar_Circle_Dominos_Facing_Patripul_LHS_30x40": {
+    "file": "boards/4/Kalyan_Bail_Bazar_Circle_Dominos_Facing_Patripul_LHS_30x40.png",
+    "x": 185,"y": 249,"w": 180,"h": 245},
+  "Kalyan_Near_Prem_Auto_Chowk_Facing_Khadakpada_40x40": {
+    "file": "boards/4/Kalyan_Near_Prem_Auto_Chowk_Facing_Khadakpada_40x40.png",
+    "x": 541,"y": 334,"w": 182,"h": 47},
+  "Kalyan_Opp_Saket_Next_World_Facing_Newali_Naka_35x35": {
+    "file": "boards/4/Kalyan_Opp_Saket_Next_World_Facing_Newali_Naka_35x35.png",
+    "x": 540,"y": 333,"w": 183,"h": 62},
+  "Kalyan_Opp_Saket_Next_World_Facing_Chakki_Naka_35x35": {
+    "file": "boards/4/Kalyan_Opp_Saket_Next_World_Facing_Chakki_Naka_35x35.png",
+    "x": 539,"y": 336,"w": 285,"h": 25},
+  "Kalyan_Opp_Kohinoor_Uptown,_Bapgaon_Facing_Adharwadi_40x40": {
+    "file": "boards/4/Kalyan_Opp_Kohinoor_Uptown-_Bapgaon_Facing_Adharwadi_40x40.png",
+    "x": 406,"y": 336,"w": 190,"h": 15},
+  "Kalyan_Opp_Kohinoor_Uptown_Bapgaon_Facing_BPCL_Petrol_Pump_40x40": {
+    "file": "boards/4/Kalyan_Opp_Kohinoor_Uptown_Bapgaon_Facing_BPCL_Petrol_Pump_40x40.png",
+    "x": 408,"y": 336,"w": 164,"h": 52},
+  "Kalyan_Shil_Road_Near_Puma_Showroom_Kalyan_Shil_Road_Facing_Kalyan_40x40": {
+    "file": "boards/4/Kalyan_Shil_Road_Near_Puma_Showroom_Kalyan_Shil_Road_Facing_Kalyan_40x40.png",
+    "x": 539,"y": 334,"w": 235,"h": 87},
+  "Kalyan_Shil_Road_Near_Kokan_King_Hotel_Marathon_Project_Entrance_Fg_Kalyan_50x50": {
+    "file": "boards/4/Kalyan_Shil_Road_Near_Kokan_King_Hotel_Marathon_Project_Entrance_Fg_Kalyan_50x50.png",
+    "x": 542,"y": 334,"w": 221,"h": 77},
+  "Kalyan_Shil_Road_Opp_Croma_Adidas_Showroom_Facing_Vashi_40x50": {
+    "file": "boards/4/Kalyan_Shil_Road_Opp_Croma_Adidas_Showroom_Facing_Vashi_40x50.png",
+    "x": 540,"y": 334,"w": 257,"h": 25},
+  "Kalyan_Shil_Road_Lodha_Palava_Facing_Kalyan_60x50": {
+    "file": "boards/4/Kalyan_Shil_Road_Lodha_Palava_Facing_Kalyan_60x50.png",
+    "x": 534,"y": 335,"w": 210,"h": 64},
+  "Kalyan_Shil_Road_Katai_Toll_Naka_60x50": {
+    "file": "boards/4/Kalyan_Shil_Road_Katai_Toll_Naka_60x50.png",
+    "x": 542,"y": 334,"w": 209,"h": 54},
+  "Kalyan_Shil_Road_Katai_Naka_Facing_Vashi_55x40": {
+    "file": "boards/4/Kalyan_Shil_Road_Katai_Naka_Facing_Vashi_55x40.png",
+    "x": 537,"y": 333,"w": 157,"h": 58},
+  "Kalyan_Shil_Road_Opp_HP_Petrol_Pump_Nr_Katai_Naka_Facing_Vashi_60x40": {
+    "file": "boards/4/Kalyan_Shil_Road_Opp_HP_Petrol_Pump_Nr_Katai_Naka_Facing_Vashi_60x40.png",
+    "x": 539,"y": 332,"w": 179,"h": 48},
+  "Kalyan_Shil_Road_Opp_HP_Petrol_Pump_Nr_Katai_Naka_Facing_Kalyan_60x40": {
+    "file": "boards/4/Kalyan_Shil_Road_Opp_HP_Petrol_Pump_Nr_Katai_Naka_Facing_Kalyan_60x40.png",
+    "x": 541,"y": 334,"w": 188,"h": 53},
+  "Kalyan_Shil_Road_Nr_Lodha_Palava_Lakeshore_Facing_Katai_Taloja_40x50": {
+    "file": "boards/4/Kalyan_Shil_Road_Nr_Lodha_Palava_Lakeshore_Facing_Katai_Taloja_40x50.png",
+    "x": 539,"y": 334,"w": 179,"h": 21},
+  "Kalyan_Shil_Road_Opp_Classik_Hotel_Facing_Vashi_Towards_Kalyan_15x15": {
+    "file": "boards/4/Kalyan_Shil_Road_Opp_Classik_Hotel_Facing_Vashi_Towards_Kalyan_15x15.png",
+    "x": 542,"y": 333,"w": 168,"h": 165},
+  "Kalyan_Shil_Road_True_Value_Showroom_Sonarpada_Facing_Kalyan_40x50": {
+    "file": "boards/4/Kalyan_Shil_Road_True_Value_Showroom_Sonarpada_Facing_Kalyan_40x50.png",
+    "x": 544,"y": 336,"w": 173,"h": 36},
+  "Kalyan_Mahanagar_Gas_Nr_Kongao_Toll_Plaza_Facing_Bhiwandi_40x40": {
+    "file": "boards/4/Kalyan_Mahanagar_Gas_Nr_Kongao_Toll_Plaza_Facing_Bhiwandi_40x40.png",
+    "x": 539,"y": 333,"w": 154,"h": 45},
+  "Kalyan_Mahanagar_Gas_Nr_Kongao_Toll_Plaza_Facing_Kalyan_82x40": {
+    "file": "boards/4/Kalyan_Mahanagar_Gas_Nr_Kongao_Toll_Plaza_Facing_Kalyan_82x40.png",
+    "x": 541,"y": 336,"w": 223,"h": 99},
+  "Kalyan_Mahanagar_Gas_Nr_Kongao_Toll_Plaza_Facing_Bhiwandi_40x50": {
+    "file": "boards/4/Kalyan_Mahanagar_Gas_Nr_Kongao_Toll_Plaza_Facing_Bhiwandi_40x50.png",
+    "x": 540,"y": 335,"w": 248,"h": 99},
+  "Kalyan_Mahanagar_Gas_Nr_Kongao_Toll_Plaza_Facing_Kalyan_40x50": {
+    "file": "boards/4/Kalyan_Mahanagar_Gas_Nr_Kongao_Toll_Plaza_Facing_Kalyan_40x50.png",
+    "x": 540,"y": 335,"w": 228,"h": 110},
+  "PANVEL_Walilkar_Hospital_Nr_HP_Petrol_Pump_FacingPanvel_40x35": {
+    "file": "boards/4/PANVEL_Walilkar_Hospital_Nr_HP_Petrol_Pump_FacingPanvel_40x35.png",
+    "x": 535,"y": 334,"w": 203,"h": 108},
+  "PANVEL_Taloja_Toll_Naka_FacingShilphata_30x40": {
+    "file": "boards/4/PANVEL_Taloja_Toll_Naka_FacingShilphata_30x40.png",
+    "x": 538,"y": 333,"w": 199,"h": 85},
+  "PANVEL_Taloja_Toll_Naka_Facing_Panvel_30x40": {
+    "file": "boards/4/PANVEL_Taloja_Toll_Naka_Facing_Panvel_30x40.png",
+    "x": 537,"y": 333,"w": 339,"h": 39},
+  "PANVEL_Shiv_Mandir_Near_Rutika_Restaurant_FacingPanvel_40x40": {
+    "file": "boards/4/PANVEL_Shiv_Mandir_Near_Rutika_Restaurant_FacingPanvel_40x40.png",
+    "x": 537,"y": 334,"w": 258,"h": 181}
 }

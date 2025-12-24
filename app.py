@@ -1,36 +1,51 @@
-from fastapi import FastAPI, UploadFile, File
-from fastapi.responses import FileResponse
-import shutil
-import uuid
 import os
-
+import uuid
+import shutil
+from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi.responses import FileResponse
 from overlay import generate_preview_for_image
 
-app = FastAPI()
+app = FastAPI(title="MMX Billboard Preview Service")
 
-os.makedirs("uploads", exist_ok=True)
+UPLOAD_DIR = "uploads"
+os.makedirs(UPLOAD_DIR, exist_ok=True)
 
+@app.post("/preview")
+async def get_preview(file: UploadFile = File(...)):
+    file_ext = os.path.splitext(file.filename)[1]
+    temp_name = f"{uuid.uuid4()}{file_ext}"
+    temp_path = os.path.join(UPLOAD_DIR, temp_name)
 
-@app.post("/preview", response_class=FileResponse)
-async def preview_board(file: UploadFile = File(...)):
-    # 1) save uploaded creative temporarily
-    ext = os.path.splitext(file.filename)[1] or ".jpg"
-    tmp_name = f"{uuid.uuid4()}{ext}"
-    tmp_path = os.path.join("uploads", tmp_name)
+    try:
+        with open(temp_path, "wb") as buffer:
+            shutil.copyfileobj(file.file, buffer)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to save file: {str(e)}")
 
-    with open(tmp_path, "wb") as buffer:
-        shutil.copyfileobj(file.file, buffer)
+    try:
+        result = generate_preview_for_image(temp_path)
+        
+        return {
+            "status": "success",
+            "board_name": result["board"]["name"],
+            "ratio_diff": result["board"]["ratio_diff"],
+            "preview_url": "/download-preview"
+        }
+    except Exception as e:
+        if os.path.exists(temp_path):
+            os.remove(temp_path)
+        raise HTTPException(status_code=500, detail=str(e))
 
-    # 2) generate preview
-    out_path = "preview.png"  # always overwrite for now
-    result = generate_preview_for_image(tmp_path, max_diff=0.3, output_path=out_path)
+@app.get("/download-preview")
+async def download_preview():
+    """
+    Endpoint to download the generated preview image.
+    """
+    preview_path = "preview.png"
+    if os.path.exists(preview_path):
+        return FileResponse(preview_path, media_type="image/png")
+    raise HTTPException(status_code=404, detail="Preview image not found. Please generate one first.")
 
-    # 3) optionally delete original creative
-    os.remove(tmp_path)
-
-    # 4) return the preview image
-    return FileResponse(
-        path=out_path,
-        media_type="image/png",
-        filename="preview.png",
-    )
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="127.0.0.1", port=8000)
