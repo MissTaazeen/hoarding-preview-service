@@ -1,39 +1,57 @@
-# Hoarding Preview Service
-Given a creative image, this service:
+# MMX Billboard Preview Service
 
-1. Reads the image size and computes its aspect ratio.
-2. Compares it with configured board sizes taken from media plan PPTs.
-3. Selects the best-fitting board based on aspect ratio.
-4. Overlays the creative onto the board photo to generate a preview.
+An automated FastAPI-based microservice that allows media planners to visualize advertisements (creatives) on real-world hoardings. The system automatically matches a creative's aspect ratio to the most suitable physical hoarding and generates a high-quality overlay preview.
 
-## Tech stack
-- Python 3
-- FastAPI (backend API)
-- Uvicorn (ASGI server)
-- Pillow (image processing)
+## 🚀 Key Features
+- **Automatic Board Selection**: Uses a ratio-matching algorithm to find the best hoarding for any artwork.
+- **Precise Coordinate Mapping**: Leverages a JSON-based configuration to place ads exactly on billboard surfaces.
+- **Instant Previews**: Generates realistic "site-in-situ" photos in seconds.
+- **Scalable Design**: Add new hoarding sites simply by updating a configuration file.
 
-## Setup
-pip install -r requirements.txt
+## 🧠 The Logic
+The system operates on three main pillars:
+1. **Geometric Ratio Matching**: It calculates the aspect ratio ($W \div H$) of the uploaded file and compares it against the physical dimensions of available hoardings (e.g., 20x10, 4x4).
+2. **Coordinate Transformation**: Using the `Pillow` library, it resizes the creative to fit the specific pixel coordinates $(x, y, w, h)$ of the target hoarding area in the site photo.
+3. **API Orchestration**: A FastAPI backend handles the image upload, processing, and delivery of the final preview image.
+
+## 🛠️ Tech Stack
+- **Backend**: FastAPI (Python)
+- **Image Processing**: Pillow (PIL)
+- **Web Server**: Uvicorn
+- **Data Storage**: JSON (Metadata & Configuration)
+
+## 📂 Project Structure
+
+MMX_Final/
+├── app.py # FastAPI entrypoint & API routes
+├── overlay.py # Image processing and overlay logic
+├── ratio_service.py # Core logic for board matching
+├── ratio_matcher.py # Helper algorithm for ratio calculation
+├── boards_config.json # Hoarding metadata (paths & coordinates)
+├── boards/ # Directory for hoarding site photos
+├── uploads/ # Temporary storage for user uploads
+└── requirements.txt # Project dependencies
 
 
-## Run the API
+## ⚙️ Installation & Setup
+
+1. **Clone the repository:**
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+cd MMX_Final
+
+
+2. **Install dependencies:**
+pip install fastapi uvicorn Pillow
+
+3. **Run the server:**
 uvicorn app:app --reload
 
 
-Then open `http://127.0.0.1:8000/docs` in a browser:
+## 📖 Usage
+1. Open your browser and go to `http://127.0.0.1:8000/docs`.
+2. Use the **POST `/preview`** endpoint to upload your advertisement image.
+3. The system will return the name of the selected board.
+4. Go to the **GET `/download-preview`** endpoint to view your realistic billboard preview.
 
-1. Use `POST /preview`.
-2. Click **Try it out** and upload a creative image.
-3. Execute and download the returned preview image.
-
-## Configuration
-
-- `boards/` contains board/hoarding photos.
-- `boards_config.json` defines, for each board:
-  - `file`: path to the board image.
-  - `x, y, w, h`: rectangle where the creative is pasted.
-
-Then commit and push:
-git add README.md
-git commit -m "Add README with setup and usage"
-git push
+## 🤝 Contribution
+This project was developed during an internship for the MMX project. Contributions to improve the matching algorithm or UI are welcome!
